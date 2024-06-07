@@ -128,3 +128,159 @@
     max-width: 50%;
     height: auto;
   }
+
+  #conteudo-1 {
+    margin-top: 50px;
+    margin-left: 50vh;
+  }
+
+
+  #conteudo-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh;
+    background-color: #f4f4f4;
+    height: 60vh;
+    box-shadow: inset 0 -0.8vh 2vh -1.3vh rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    width: 80%;
+}
+
+#fotos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4%;
+}
+
+#time {
+    display: flex;
+    color: #316EB5;
+    margin: 1%;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    font-size: 1.8vw;
+}
+
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 15vw;
+    height: 45vh;
+    background-color: #fff;
+    box-shadow: 0 1vw 1.2vw 0 rgba(0, 0, 0, 0.062);
+    border: 4px solid #316EB5;
+    border-radius: 5%;
+}
+
+.perfil img {
+    width: 14vw;
+    height: auto;
+}
+
+.descPerfil {
+    color: #282828;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.descPerfil h2 {
+    font-size: 1.6vw;
+}
+
+.descPerfil h3 {
+    color: #3e3e59;
+    font-weight: 400;
+    font-size: 1.1vw;
+}
+
+.descPerfil p {
+    color: #5f6980;
+    font-weight: lighter;
+    font-size: 1.5vh;
+}
+
+
+@media screen and (max-width: 768px) {
+    #conteudo-1 {
+        margin-top: 20px;
+        margin-left: 20vh;
+    }
+    
+    #conteudo-2 {
+        padding: 2vh;
+        height: 50vh;
+    }
+    
+    .perfil {
+        width: 30vw;
+        height: 30vh;
+    }
+    
+    .descPerfil {
+        padding: 0.5vw;
+    }
+    
+    .descPerfil h2 {
+        font-size: 1.2vw;
+    }
+    
+    .descPerfil h3 {
+        font-size: 0.9vw;
+    }
+    
+    .descPerfil p {
+        font-size: 1.2vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #conteudo-1 {
+        margin-top: 10px;
+        margin-left: 10vh;
+    }
+    
+    #conteudo-2 {
+        padding: 1vh;
+        height: 30vh;
+    }
+    
+    .perfil {
+        width: 40vw;
+        height: 20vh;
+    }
+    
+    .descPerfil {
+        padding: 0.2vw;
+    }
+    
+    .descPerfil h2 {
+        font-size: 0.8vw;
+    }
+    
+    .descPerfil h3 {
+        font-size: 0.6vw;
+    }
+    
+    .descPerfil p {
+        font-size: 0.8vh;
+    }
+}
+
+.github-link {
+    display: inline-block;
+    width: 0.5em;
+    height: 0.5em;
+    margin: 0.2em;
+  }
+  
+  .github-link:hover {
+    opacity: 0.8;
+  }
