@@ -72,6 +72,14 @@
     height: auto;
 }
 
+.text2 a{
+  text-decoration: none;
+}
+
+.main-text a{
+  text-decoration: none;
+}
+
 #img-div {
     position: absolute;
     right: 0;

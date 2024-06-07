@@ -14,7 +14,7 @@
             
             <div class="link-div">
                 <ul class="links-list">
-                    <li class="link-item"><a href="#" id="login-btn">Login</a></li>
+                    <li class="link-item"><a href="./paginas/login.html" id="login-btn">Login</a></li>
                     <li class="link-item"><a href="#" id="criar-conta-btn">Criar Conta</a></li>
                 </ul>
             </div>
@@ -107,18 +107,5 @@
             <h1>ERRO!</h1>
         </dialog>
         <script src="./js/script.js"></script>
-        <script>
-            window.watsonAssistantChatOptions = {
-            integrationID: "ef970137-0a80-48fc-b5cd-a8248df53058", // The ID of this integration.
-            region: "au-syd", // The region your integration is hosted in.
-            serviceInstanceID: "1a4679c3-4026-4987-90a8-8e82c5ac3ef9", // The ID of your service instance.
-            onLoad: async (instance) => { await instance.render(); }
-            };
-            setTimeout(function(){
-            const t=document.createElement('script');
-            t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-            document.head.appendChild(t);
-            });
-        </script>
     </body>
 </html>
