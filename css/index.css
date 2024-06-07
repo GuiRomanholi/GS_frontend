@@ -175,3 +175,97 @@ color: #316EB5;
     color: #fff;
     text-align: center;
 }
+
+#criar-conta-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #254c85;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    width: 25%;
+    color: #fff;
+}
+
+#criar-conta-dialog button[type="submit"] {
+    background-color: #316EB5;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #criar-conta-dialog button[type="submit"]:hover {
+    background-color: #254c85;
+    color: #fff;
+  }
+
+  #criar-conta-dialog button[id="fechar-modal"] {
+    margin-top: 10px;
+    background-color: #316EB5;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #criar-conta-dialog button[id="fechar-modal"]:hover {
+    background-color: #254c85;
+    color: #fff;
+  }
+
+  #criar-conta-dialog button[type="submit"], #criar-conta-dialog button[id="fechar-modal"] {
+    display: block;
+    margin: 5px auto;
+  }
+
+
+.form{
+    padding: 18px;
+    color: #fff;
+  }
+
+  .form h2{
+    margin-top: 5px;
+  }
+
+  .form-content{
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    position: relative;
+  }
+
+  .form-content label{
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+
+  .form-content input{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+  }
+
+  .form-content a{
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    visibility: hidden;
+  }
+
+
+  .form-content.error input{
+    border-color: #ff3b25;
+  }
+
+  .form-content.error a{
+    color: #ff3b25;
+    visibility: visible;
+  }
