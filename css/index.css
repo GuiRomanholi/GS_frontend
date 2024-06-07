@@ -413,7 +413,7 @@ button:hover {
     color: black;
 }
 
-#login-dialog button[id="fechar-modal"] {
+#login-dialog button[id="fechar-login-modal"] {
     border: 2px solid #ccc;
     display: flex;
     align-self: center;
