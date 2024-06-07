@@ -21,7 +21,7 @@
 - [x] Estilizar página Quem Somos
 - [x] Diminuir imagens
 
-## Validação Em JS:
+## Validação Em JavaScript:
 
 - [x] Criar Formulário
 - [x] Fazer pasta e arquivo js
