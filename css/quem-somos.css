@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para o cabeçalho */
 #cabecalho {
     height: 100px;
     display: flex;
@@ -16,11 +21,6 @@
 
 .img {
     margin-right: auto;
-}
-
-.link-div {
-    display: flex;
-    align-items: center;
 }
 
 .links-list {
@@ -46,32 +46,108 @@
 }
 
 .img-logo {
-    display: flex;
     max-width: 20vh;
     max-height: 20vh;
     width: auto;
     height: auto;
 }
 
-#img-div {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+/* Estilos para a seção de conteúdo 1 */
+#conteudo-1 {
     display: flex;
-    align-items: flex-end;
-    height: 100%;
+    justify-content: space-between;
+    padding: 5vh 10vh;
 }
 
+.texto-quemsomos {
+    max-width: 50%;
+}
+
+.texto-quemsomos h1 {
+    color: #316EB5;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    margin-top: 15vh;
+}
+
+.texto-p p {
+    color: #303030;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.img-quemsomos img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para a seção de conteúdo 2 */
+#conteudo-2 {
+    text-align: center;
+    padding: 5vh 10vh;
+    background-color: #f4f4f4;
+}
+
+#time h1 {
+    color: #316EB5;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#fotos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.perfil {
+    width: calc(33.33% - 20px);
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.perfil img {
+    width: 100%;
+    height: auto;
+}
+
+.descPerfil {
+    padding: 20px;
+}
+
+.descPerfil h2 {
+    color: #316EB5;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.descPerfil h3 {
+    color: #3e3e59;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.descPerfil .github-link {
+    color: #316EB5;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.descPerfil .github-link:hover {
+    color: #254c85;
+}
+
+/* Estilos para o rodapé */
 #rodape {
     height: 100px;
-    position: relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #316EB5;
-  padding: 10px 0;
-  text-align: center;
-  margin-top: 7%;
+    background-color: #316EB5;
+    padding: 10px 0;
+    text-align: center;
 }
 
 .footer-content {
@@ -83,204 +159,62 @@
 .footer-icons {
     display: flex;
     justify-content: center;
+    gap: 20px;
     margin-bottom: 10px;
 }
 
 .footer-icon {
     width: 35px;
     height: 35px;
-    margin: 0 10px;
 }
 
 #rodape p {
     color: #fff;
-    text-align: center;
+    font-size: 1em;
 }
 
-.texto-quemsomos {
-    font-family: Arial, Helvetica, sans-serif;
-    width: 38%;
-    margin-top: 8%;
-    float: left;
-  }
+@media only screen and (max-width: 768px) {
+    /* Estilos para telas menores que 768px */
+    #cabecalho {
+        padding: 0 5vw;
+    }
 
-  .titulo{
-    color: #316EB5;
-    font-size: 1.9em;
-    margin-bottom: 20px;
-  }
+    .texto-quemsomos {
+        max-width: 100%;
+        padding-right: 10px;
+    }
 
-  .texto-p{
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    max-width: 60vw;
-    margin-left: auto;
-    text-align: justify;
-  }
-  
-  .img-quemsomos {
-    width: 60%;
-    float: right;
-    margin-top: 5%;
-  }
+    .img-quemsomos {
+        width: 50%;
+        margin-top: 5%;
+    }
 
-  .img-quemsomos img {
-    max-width: 50%;
-    height: auto;
-  }
+    .img-quemsomos img {
+        max-width: 80%;
+    }
 
-  #conteudo-1 {
-    margin-top: 50px;
-    margin-left: 50vh;
-  }
-
-
-  #conteudo-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 3vh;
-    background-color: #f4f4f4;
-    height: 60vh;
-    box-shadow: inset 0 -0.8vh 2vh -1.3vh rgba(0, 0, 0, 0.3);
-    margin: 0 auto;
-    width: 80%;
-}
-
-#fotos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4%;
-}
-
-#time {
-    display: flex;
-    color: #316EB5;
-    margin: 1%;
-    align-items: center;
-    justify-content: center;
-    gap: 2vw;
-    font-size: 1.8vw;
-}
-
-
-.perfil {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 15vw;
-    height: 45vh;
-    background-color: #fff;
-    box-shadow: 0 1vw 1.2vw 0 rgba(0, 0, 0, 0.062);
-    border: 4px solid #316EB5;
-    border-radius: 5%;
-}
-
-.perfil img {
-    width: 14vw;
-    height: auto;
-}
-
-.descPerfil {
-    color: #282828;
-    padding: 1vw;
-    display: flex;
-    flex-direction: column;
-    gap: 1vh;
-}
-
-.descPerfil h2 {
-    font-size: 1.6vw;
-}
-
-.descPerfil h3 {
-    color: #3e3e59;
-    font-weight: 400;
-    font-size: 1.1vw;
-}
-
-.descPerfil p {
-    color: #5f6980;
-    font-weight: lighter;
-    font-size: 1.5vh;
-}
-
-
-@media screen and (max-width: 768px) {
     #conteudo-1 {
-        margin-top: 20px;
-        margin-left: 20vh;
+        flex-direction: column-reverse;
+        align-items: center;
     }
-    
+
     #conteudo-2 {
-        padding: 2vh;
-        height: 50vh;
+        padding: 5vh 5vw;
+
     }
-    
+
+    #fotos {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .perfil {
-        width: 30vw;
-        height: 30vh;
+        width: 80%;
+        margin-bottom: 20px;
     }
-    
-    .descPerfil {
-        padding: 0.5vw;
-    }
-    
-    .descPerfil h2 {
-        font-size: 1.2vw;
-    }
-    
-    .descPerfil h3 {
-        font-size: 0.9vw;
-    }
-    
-    .descPerfil p {
-        font-size: 1.2vh;
+
+    /* Redimensiona as imagens dos perfis */
+    .perfil img {
+        width: 60%;
     }
 }
-
-@media screen and (max-width: 480px) {
-    #conteudo-1 {
-        margin-top: 10px;
-        margin-left: 10vh;
-    }
-    
-    #conteudo-2 {
-        padding: 1vh;
-        height: 30vh;
-    }
-    
-    .perfil {
-        width: 40vw;
-        height: 20vh;
-    }
-    
-    .descPerfil {
-        padding: 0.2vw;
-    }
-    
-    .descPerfil h2 {
-        font-size: 0.8vw;
-    }
-    
-    .descPerfil h3 {
-        font-size: 0.6vw;
-    }
-    
-    .descPerfil p {
-        font-size: 0.8vh;
-    }
-}
-
-.github-link {
-    display: inline-block;
-    width: 0.5em;
-    height: 0.5em;
-    margin: 0.2em;
-  }
-  
-  .github-link:hover {
-    opacity: 0.8;
-  }
