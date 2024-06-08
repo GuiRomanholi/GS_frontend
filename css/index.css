@@ -348,7 +348,7 @@ form {
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 100%;
-    box-sizing: border-box; /* Ensure padding and border are included in width */
+    box-sizing: border-box;
 }
 
 button {
@@ -403,9 +403,9 @@ button:hover {
     display: flex;
     align-self: center;
     justify-content: center;
-    font-size: 1.0em; /* Reduz o tamanho do texto do botão */
-    width: 50%; /* Define a largura do botão */
-    margin: auto; /* Centraliza horizontalmente */
+    font-size: 1.0em;
+    width: 50%;
+    margin: auto;
 }
 
 #form-login button:hover {
@@ -418,8 +418,8 @@ button:hover {
     display: flex;
     align-self: center;
     justify-content: center;
-    width: 50%; /* Define a largura do botão de fechar */
-    margin: auto; /* Centraliza horizontalmente */
+    width: 50%;
+    margin: auto;
     margin-top: 2%;
 }
 
